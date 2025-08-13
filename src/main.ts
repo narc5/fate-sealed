@@ -1,10 +1,10 @@
 import { app, BrowserWindow } from 'electron';
-import { initialiseTray } from '../utils/tray';
+import { initialiseTray } from './utils/tray';
 import path from 'node:path';
 import started from 'electron-squirrel-startup';
 import establishClientConnection from './services/establishClientConnections';
 import { ipcMain } from 'electron';
-import { sendipcMainStatus } from '../utils/handleConnectionStatus';
+import { sendipcMainStatus } from './utils/handleConnectionStatus';
 
 let mainWindow: BrowserWindow;
 

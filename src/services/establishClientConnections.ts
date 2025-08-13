@@ -1,5 +1,5 @@
 import { BrowserWindow } from 'electron';
-import { handleConnectionStatus } from '../../utils/handleConnectionStatus';
+import { handleConnectionStatus } from '../utils/handleConnectionStatus';
 import getClientCredentials from './getClientCredentials';
 
 // promise<credentials> is used as ECC is an async fn, thus a promise is used to represent it being resolved
